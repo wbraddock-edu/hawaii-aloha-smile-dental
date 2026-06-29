@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | Aloha Smile Dental</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header>
+<a href="index.html" class="logo-link"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-label="Aloha Smile Dental Logo" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18" cy="18" r="17" fill="#0B5394"/>
+<path d="M10 16 C10 12, 14 9, 18 9 C22 9, 26 12, 26 16 C26 22, 22 27, 18 27 C14 27, 10 22, 10 16Z" fill="white" opacity="0.95"/>
+<path d="M14 20 Q18 24 22 20" stroke="#0B5394" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="14" cy="15" r="2" fill="#A8D8EA"/>
+<circle cx="22" cy="15" r="2" fill="#A8D8EA"/>
+</svg><span class="logo-text">Aloha Smile Dental</span></a>
+<div class="header-actions"><button class="dark-toggle" id="darkToggle">🌙</button></div>
+</header>
+<div id="adminLogin" style="padding:2rem 1rem;">
+<div class="admin-login">
+<div style="text-align:center;margin-bottom:1.5rem;"><div style="font-size:2rem;">&#x1F9B7;</div><h2 style="font-family:'Nunito',sans-serif;font-weight:800;">Admin Login</h2><p style="color:var(--text-muted);">Aloha Smile Dental Dashboard</p></div>
+<form id="adminLoginForm"><div class="form-group"><label>Password</label><input type="password" id="adminPassword" placeholder="Enter admin password"></div>
+<p id="loginError" style="color:#c0392b;font-size:.85rem;margin-bottom:.75rem;"></p>
+<button type="submit" class="cta-btn" style="width:100%;">Login</button></form>
+</div>
+</div>
+<div id="adminPanel" style="display:none;" class="admin-layout">
+<div class="admin-sidebar">
+<div style="padding:1rem 1.5rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.15);margin-bottom:.5rem;"><div style="font-weight:800;font-family:'Nunito',sans-serif;">Admin Panel</div><div style="font-size:.75rem;opacity:.7;">Aloha Smile Dental</div></div>
+<a href="#" class="active">&#x1F4CA; Dashboard</a>
+<a href="#">&#x1F4C5; Appointments</a>
+<a href="#">&#x1F4AC; Messages</a>
+<a href="#">&#x1F465; Patients</a>
+<a href="index.html">&#x2190; Back to Site</a>
+</div>
+<div class="admin-content">
+<div class="admin-header"><h1>Dashboard</h1><p style="color:var(--text-muted);">Welcome, Dr. Kahale. Today's schedule overview.</p></div>
+<div class="stat-cards">
+<div class="stat-card"><div class="stat-num">14</div><div class="stat-label">Appointments Today</div></div>
+<div class="stat-card"><div class="stat-num">3</div><div class="stat-label">New Patient Exams</div></div>
+<div class="stat-card"><div class="stat-num">$4,820</div><div class="stat-label">Revenue Today</div></div>
+<div class="stat-card"><div class="stat-num">6</div><div class="stat-label">New Messages</div></div>
+</div>
+<h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:1rem;">Today's Appointments</h2>
+<div style="overflow-x:auto;margin-bottom:2rem;">
+<table>
+<thead><tr><th>Patient</th><th>Procedure</th><th>Time</th><th>Provider</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Keala Fujita (New)</td><td>New Patient Exam</td><td>8:00 AM</td><td>Dr. Kahale</td><td><span class="badge badge-green">Checked In</span></td></tr>
+<tr><td>Marco Dela Cruz</td><td>Emergency Exam + Crown</td><td>9:00 AM</td><td>Dr. Miyamoto</td><td><span class="badge badge-green">In Chair</span></td></tr>
+<tr><td>Yuki Tanaka</td><td>In-Office Whitening</td><td>10:00 AM</td><td>Dr. Miyamoto</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+<tr><td>Tom Kono (x5 family)</td><td>Family Cleanings</td><td>11:00 AM</td><td>Both Hygienists</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+<tr><td>Sarah Nakamura</td><td>Composite Filling x2</td><td>1:00 PM</td><td>Dr. Kahale</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+</tbody>
+</table>
+</div>
+<h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:1rem;">Recent Messages</h2>
+<div style="overflow-x:auto;">
+<table>
+<thead><tr><th>From</th><th>Subject</th><th>Date</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Jennifer Lau</td><td>Question about insurance coverage for veneers</td><td>Jun 30</td><td><span class="badge badge-red">Unread</span></td></tr>
+<tr><td>Ron Patel</td><td>Need to reschedule July 5 appointment</td><td>Jun 29</td><td><span class="badge badge-red">Unread</span></td></tr>
+<tr><td>Amanda Wong</td><td>Thank you note &#x2014; amazing hygienist!</td><td>Jun 28</td><td><span class="badge badge-green">Read</span></td></tr>
+<tr><td>Chris Medeiros</td><td>Question about whitening sensitivity</td><td>Jun 27</td><td><span class="badge badge-green">Read</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

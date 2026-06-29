@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment | Aloha Smile Dental | Aloha Smile Dental</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+<a href="index.html" class="logo-link"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-label="Aloha Smile Dental Logo" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18" cy="18" r="17" fill="#0B5394"/>
+<path d="M10 16 C10 12, 14 9, 18 9 C22 9, 26 12, 26 16 C26 22, 22 27, 18 27 C14 27, 10 22, 10 16Z" fill="white" opacity="0.95"/>
+<path d="M14 20 Q18 24 22 20" stroke="#0B5394" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="14" cy="15" r="2" fill="#A8D8EA"/>
+<circle cx="22" cy="15" r="2" fill="#A8D8EA"/>
+</svg><span class="logo-text">Aloha Smile Dental</span></a>
+<nav><a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="blog.html">Blog</a>
+<a href="faq.html">FAQ</a>
+<a href="reviews.html">Reviews</a>
+<a href="booking.html" class="active">Book Now</a></nav>
+<div class="header-actions">
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+<a href="booking.html" class="cta-btn header-cta">Book Appointment</a>
+<button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="blog.html">Blog</a>
+<a href="faq.html">FAQ</a>
+<a href="reviews.html">Reviews</a>
+<a href="booking.html">Book Now</a></div>
+<div class="page-hero"><h1>Book an Appointment</h1><p>New and existing patients welcome. Evening and Saturday hours available.</p></div>
+<section><div class="container" style="max-width:720px;">
+<div class="booking-steps">
+<div class="step-indicator active">1 · Service</div>
+<div class="step-indicator">2 · Date &amp; Time</div>
+<div class="step-indicator">3 · Patient Info</div>
+<div class="step-indicator">4 · Confirm</div>
+</div>
+<div class="form-step active" id="step1"><div class="card">
+<h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:1.25rem;">What Are You Coming In For?</h2>
+<div class="service-options">
+<div class="service-option selected"><span>&#x1F9B7;</span><strong>New Patient Exam</strong></div>
+<div class="service-option"><span>&#x2728;</span><strong>Cleaning</strong></div>
+<div class="service-option"><span>&#x1F31F;</span><strong>Whitening</strong></div>
+<div class="service-option"><span>&#x1FA79;</span><strong>Filling</strong></div>
+<div class="service-option"><span>&#x1F476;</span><strong>Child Visit</strong></div>
+<div class="service-option"><span>&#x1F6A8;</span><strong>Emergency</strong></div>
+</div>
+<div class="form-group" style="margin-top:1.25rem;"><label>Any concerns or notes?</label><textarea placeholder="Describe any pain, sensitivity, or concerns..."></textarea></div>
+<div style="display:flex;justify-content:flex-end;margin-top:1rem;"><button class="cta-btn" data-next>Next &#x2192;</button></div>
+</div></div>
+<div class="form-step" id="step2"><div class="card">
+<h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:1.25rem;">Choose Appointment Time</h2>
+<div class="form-group"><label>Preferred Date</label><input type="date"></div>
+<div class="form-group"><label>Preferred Time</label>
+<select><option>Select...</option><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:30 PM (Extended Hours)</option><option>Saturday AM (by availability)</option></select></div>
+<div style="display:flex;justify-content:space-between;gap:1rem;margin-top:1rem;"><button class="cta-btn outline" data-prev>&#x2190; Back</button><button class="cta-btn" data-next>Next &#x2192;</button></div>
+</div></div>
+<div class="form-step" id="step3"><div class="card">
+<h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:1.25rem;">Patient Information</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+<div class="form-group"><label>First Name</label><input type="text" placeholder="Keala"></div>
+<div class="form-group"><label>Last Name</label><input type="text" placeholder="Fujita"></div>
+</div>
+<div class="form-group"><label>Date of Birth</label><input type="date"></div>
+<div class="form-group"><label>Phone</label><input type="tel" placeholder="(808) 555-0000"></div>
+<div class="form-group"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+<div class="form-group"><label>Insurance Provider (if applicable)</label>
+<select><option>No Insurance / Self-Pay</option><option>HMSA</option><option>UHA</option><option>Kaiser</option><option>Delta Dental</option><option>MetLife</option><option>Other</option></select></div>
+<div style="display:flex;justify-content:space-between;gap:1rem;margin-top:1rem;"><button class="cta-btn outline" data-prev>&#x2190; Back</button><button class="cta-btn" data-next>Confirm &#x2192;</button></div>
+</div></div>
+<div class="form-step" id="step4">
+<div class="confirmation-box"><div class="check-icon">&#x1F9B7;</div>
+<h2>Appointment Requested!</h2>
+<p style="color:var(--text-muted);margin-bottom:1.5rem;">We will confirm your appointment by phone or email within 1 business hour during office hours.</p>
+<div style="background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;text-align:left;margin-bottom:1.5rem;">
+<p><strong>&#128222; Urgent?</strong> Call us at <a href="tel:8085550124" style="color:var(--primary);">(808) 555-0124</a></p>
+<p style="margin-top:.5rem;color:var(--text-muted);font-size:.9rem;">Office hours: Mon&#x2013;Fri 8 AM&#x2013;5 PM, Sat 8 AM&#x2013;1 PM HST</p>
+</div>
+<a href="index.html" class="cta-btn">Back to Home</a>
+</div></div>
+</div></section>
+<footer>
+<div class="footer-grid">
+<div class="footer-col"><h4>Aloha Smile Dental</h4><p>Healthy smiles for the whole ohana. General and family dentistry in Wailuku, Maui since 2010.</p></div>
+<div class="footer-col"><h4>Services</h4><a href="services.html">General Dentistry</a><a href="services.html">Cleanings</a><a href="services.html">Teeth Whitening</a><a href="services.html">Pediatric Dental</a></div>
+<div class="footer-col"><h4>Office</h4><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="reviews.html">Reviews</a></div>
+<div class="footer-col"><h4>Contact</h4><p>2180 Main Street<br>Wailuku, HI 96793</p><a href="tel:8085550124">(808) 555-0124</a></div>
+</div>
+<div class="footer-bottom"><p>&copy; 2024 Aloha Smile Dental. All rights reserved. | Powered by <a href="https://designholistically.com" target="_blank" rel="noopener">Design Holistically</a></p></div>
+</footer>
+<button id="backToTop" aria-label="Back to top">&#8593;</button>
+<script src="js/main.js"></script>
+</body>
+</html>
